@@ -12,12 +12,16 @@ function calculate_tax(){
    let salary = document.getElementById("payinput").value;
    let output = document.getElementById("taxoutput");
    let salary_frequecy = document.getElementById("payfreq").value;
+      
+   if (salary < 0){
+      salary = 0;
+   }
 
    if (salary_frequecy == "weekly"){
-      salary = salary * 52
+      salary = salary * 52;
    }
    else if (salary_frequecy == "monthly"){
-      salary = salary * 12
+      salary = salary * 12;
    }
 
    calculate_salaries(salary);
@@ -30,15 +34,15 @@ function calculate_tax(){
       output.innerHTML = `$ ${total.toFixed(2)}`;
    }
    else if (salary >= 45001 && salary <= 120000){
-      let total = ((salary - 45000) * 0.325) + 5092
+      let total = ((salary - 45000) * 0.325) + 5092;
       output.innerHTML = `$ ${total.toFixed(2)}`;
    }
    else if (salary >= 120001 && salary <= 180000){
-      let total = ((salary - 120000) * 0.37) + 29467
+      let total = ((salary - 120000) * 0.37) + 29467;
       output.innerHTML = `$ ${total.toFixed(2)}`;
    }
    else{
-      let total = ((salary - 180000) * 0.45) + 51667
+      let total = ((salary - 180000) * 0.45) + 51667;
       output.innerHTML = `$ ${total.toFixed(2)}`;
    }
 }
