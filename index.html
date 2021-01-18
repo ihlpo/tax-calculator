@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tax Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Tax Calculator</h1>
+		<p>
+			Use this calculator to quickly find out how much tax you will need to pay on your income.
+			This calculator is always up to date and conforms to official Australian Tax Office rates and formulas.
+		</p>
+	</header>
+
+	<div>
+		<form action="">
+			<label for="pay">Salary</label>
+			<input type="text" id="payinput" name="pay">
+			<select name="payfreq" id="payfreq">
+				<option value="annually">Annually</option>
+				<option value="monthly">Monthly</option>
+				<option value="weekly">Weekly</option>
+			</select>
+		</form>
+	</div>
+
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<td>Weekly</td>
+					<td>Monthly</td>
+					<td>Annually</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="weekly-pay">$0</td>
+					<td id="monthly-pay"> $0</td>
+					<td id="annually-pay">$0</td>
+				</tr>
+				<tr>
+					<td>Estimated Tax</td>
+					<td></td>
+					<td id="taxoutput"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
