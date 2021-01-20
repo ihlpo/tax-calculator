@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tax Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,10 +21,18 @@
 		<form action="">
 			<label for="pay">Salary</label>
 			<input type="number" id="payinput" name="pay">
-			<select name="payfreq" id="payfreq">
+			<input type="radio" id="annually" checked="checked" name="payfreq">
+			<label for="annually">Annual</label>
+			<input type="radio" id="monthly" name="payfreq">
+			<label for="monthly">Monthly</label>
+			<input type="radio" id="weekly" name="payfreq">
+			<label for="weekly">Weekly</label>
+
+
+			<!-- <select name="payfreq" id="payfreq">
 				<option value="annually">Annually</option>
 				<option value="monthly">Monthly</option>
-				<option value="weekly">Weekly</option>
+				<option value="weekly">Weekly</option> -->
 			</select>
 		</form>
 	</div>
