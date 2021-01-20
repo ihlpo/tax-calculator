@@ -18,29 +18,43 @@ input[type="number"] {
     -moz-appearance: textfield;
   }
 
-div.flexcon{
-  background-color: red;
-  display: grid;
-  /* width: 50vw; */
-  grid-template-columns: 100px 250px;
-  /* grid-gap: 40px; */
-  padding: 20px;
-  filter: drop-shadow(-10px 10px 2px);
+header, div.input-area, div.calculations{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-div.item{
-  background-color: royalblue;
+header>p{
+  margin: 1vw 10vw;
+}
+
+form{
+  margin-top: 2vw;
+}
+form>input{
+  width: 25vw;
+  height: 4vw;
+  font-size: 1.3em;
   text-align: center;
-  font-size: 44px;
-  border: 2px solid;
-  /* margin: 10px; */
+  margin-left: 10vw;
 }
 
-h1{
-  transition: color 2s, font, font-size 2s;
+form>select{
+  width: 11vw;
+  height: 4vw;
+  font-size: 0.7em;
+  align-self: flex-end;  
 }
 
-h1:hover{
-  color: white;
-  font-size: 5em;
+table{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+  font-size: 1.3em;
+}
+
+.row1>td, .row2>td, .row3>td{
+  padding: 1rem;
+  text-align: center;
 }
