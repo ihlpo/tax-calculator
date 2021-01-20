@@ -34,17 +34,18 @@ form{
 }
 form>input{
   width: 25vw;
-  height: 4vw;
-  font-size: 1.3em;
+  height: 3vw;
+  font-size: 2vw;
   text-align: center;
   margin-left: 10vw;
 }
 
 form>select{
   width: 11vw;
-  height: 4vw;
-  font-size: 0.7em;
+  height: 2vw;
+  font-size: 1vw;
   align-self: flex-end;  
+  text-align: center;
 }
 
 table{
@@ -55,6 +56,7 @@ table{
 }
 
 .row1>td, .row2>td, .row3>td{
-  padding: 1rem;
+  padding: 0.6em;
   text-align: center;
+  font-size: 1.5vw;
 }
