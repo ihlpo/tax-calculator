@@ -42,6 +42,7 @@ function calculate_tax(){
 
    if (salary <= 18200){
       output.innerHTML = `$ 0`;
+      tax_percentage.innerHTML = `0%`
    }
    else if (salary >= 18201 && salary <= 45000){
       let total = (salary - 18200) * 0.19;
