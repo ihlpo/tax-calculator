@@ -35,10 +35,10 @@ header>p{
   margin: 1vw 10vw;
 }
 
-form{
+.form-field{
   margin-top: 2vw;
 }
-form>input{
+.form-field>input{
   width: 25vw;
   height: 3vw;
   font-size: 2vw;
@@ -46,7 +46,7 @@ form>input{
   margin-left: 10vw;
 }
 
-form>select{
+.form-field>select{
   width: 11vw;
   height: 2vw;
   font-size: 1vw;
@@ -81,7 +81,7 @@ footer{
     font-size: 0.6em;
   }
 
-  form>input{
+  .form-field>input{
     width: 70vw;
     height: 10vw;
     font-size: 8vw;
