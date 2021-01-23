@@ -89,6 +89,11 @@ footer{
     margin-left: 10vw;
   }
 
+  .form-field>select{
+    width: 12vw;
+    height: 3vw;
+  }
+
   .row{
     font-size: 5vw;
   }
